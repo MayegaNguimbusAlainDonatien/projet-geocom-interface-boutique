@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORMULAIRE DE VALIDATION</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Entrez vos informations</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nom :</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Entrez un nom valide.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Prénom :</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Entrez un prénom valide.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email :<span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <div class="invalid-feedback">
+                Entrez une addresse Email valide s'il vous plait.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">Adresse 1:</label>
+              <input type="text" class="form-control" id="address" placeholder="rue nom XXXX" required>
+              <div class="invalid-feedback">
+                Entrez une adresse valide s'il vous plait.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address2" class="form-label">Adresse 2: <span class="text-muted">(Optionnel)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Local ou suite">
+            </div>
+            <div class="col-md-5">
+              <label for="country" class="form-label">Pays</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choisir...</option>
+                <option>Cameroun</option>
+              </select>
+              <div class="invalid-feedback">
+                Choisir un pays valide s'il vous plait.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Ville</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choisir...</option>
+                <option>Yaoundé</option>
+              </select>
+              <div class="invalid-feedback">
+                Indiquez une ville valide s'il vous plait.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Code invitation :</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Code invitation recu par sms.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Enregistrer ces informations</label>
+          </div>
+          <hr class="my-4">
+  </main>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="float-end"><a href="#">retour vers le haut</a></p>
+    <p>&copy; 2020–2021 Mayega Nguimbus Alain Donatien| Génie informaticien &middot;<a href="tel:690775560">TELEPHONE </a>690775560 &middot;<a href="mailto:mayega87@gmail.com">Email</a> <hr>NOUS VOUS REMERCIONS GRANDEMENT
+  </footer>
+  </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="form-validation.js"></script>
+  </body>
+</html>
